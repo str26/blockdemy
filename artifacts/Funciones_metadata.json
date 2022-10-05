@@ -1,0 +1,84 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "parametro1",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "parametro2",
+						"type": "int256"
+					}
+				],
+				"name": "funcion2",
+				"outputs": [],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "suma1",
+				"outputs": [],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "suma2",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Funciones.sol": "Funciones"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Funciones.sol": {
+			"keccak256": "0xfcc37aa5c0a7ff3a99376c19ac7da48607d33bfd5d5935c810b3f7c5e6c29e78",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://2081865c87ae99038951ff9003a70ad36537f4ff2a26db9558becb4015325d21",
+				"dweb:/ipfs/QmUkqXQW4BTUQgJoq9ZeMddwPMEoGYwTC5S7hMiNyNYrgg"
+			]
+		}
+	},
+	"version": 1
+}

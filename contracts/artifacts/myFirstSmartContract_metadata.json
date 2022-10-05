@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.0+commit.c7dfd78e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "retrieve",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "num",
+						"type": "uint256"
+					}
+				],
+				"name": "store",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/mFirstSmartContracts.sol": "myFirstSmartContract"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/mFirstSmartContracts.sol": {
+			"keccak256": "0xef51876625b8da4a22aa02fa5488ae8db041886cb4d1a843eebde0b176a8c6b2",
+			"license": "GP-3.0",
+			"urls": [
+				"bzz-raw://47e141d12c4f11989d814d651c5bc41e375350e028ade328d33d40be92226d86",
+				"dweb:/ipfs/QmXApUqxTpGcMcvyxzqcuXDE8ikeXWF24y1AaYVE877HGy"
+			]
+		}
+	},
+	"version": 1
+}
