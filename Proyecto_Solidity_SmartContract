@@ -1,0 +1,96 @@
+//  SPDX-License-Identifier: GPL-3.0
+pragma solidity ^0.8.0;
+// Contrato de votaciones
+    // registrar Talentos
+    // persmiso a alguien de votar
+    // votar
+    
+
+    // Posibles Mejoras 
+    // crear multiples votaciones
+    // pasar los Talentos por argumentos del constructor
+    // agregar un token ERC20 como el derecho a votar (Recordando que los ERC20 son solo balances) y una vez que vote, quemar ese ERC20 del votante
+    // añadir un tiempo final para votar como en la vida real de las 6 de la tarde de determinado día
+contract votacionConTalento {
+    // variables
+    uint256 totalVotos;
+
+    struct Jurado{
+        bool voto;
+        bool puedeVotar;
+    }
+
+    mapping(address => Jurado) vota;
+
+    struct Talento {
+        uint id;
+        string nombre;
+        uint256 votos;
+    }
+
+    Talento public talento1 = Talento({
+        id: 1,
+        nombre: "Mauricio Pinon",
+        votos: 0
+    });
+
+    Talento public talento2 = Talento({
+        id: 2,
+        nombre: "Robert Carrichi",
+        votos: 0
+    });
+    Talento public talento3 = Talento({
+        id: 3,
+        nombre: "Esther Ortegon",
+        votos: 0
+    });
+    Talento public talento4 = Talento({
+        id: 4,
+        nombre: "Rocio Ferrari",
+        votos: 0
+    });
+    Talento public talento5 = Talento({
+        id: 5,
+        nombre: "Irene Ramirez",
+        votos: 0
+    });
+    Talento public talento6 = Talento({
+        id: 6,
+        nombre: "Carolina Rodriguez",
+        votos: 0
+    });
+    // funciones
+    // darle permiso a alguien de votar - (Solo Jurados)
+    function permisoVotar(address _jurado) public returns(bool, address) {
+        vota[_jurado].puedeVotar = true;
+        return (true, _jurado);
+    }
+    // votar - solo la ejecutan los votantes con permiso
+    function votar(uint _Talento) public {
+        require(vota[msg.sender].puedeVotar, "No puedes votar");
+        vota[msg.sender].voto = true;
+
+        if(_Talento == 1){
+            // votas por mau
+            talento1.votos += 1;
+        } else if (_Talento == 2) {
+            // votas por carrichi
+            talento2.votos += 1;
+        } else if (_Talento == 3) {
+            // votas por Esther
+            talento3.votos += 1;
+        } else if (_Talento == 4) {
+            // votas por Rocio
+            talento4.votos += 1;
+        } else if (_Talento == 5){
+            // votas por Irene
+            talento5.votos += 1;
+        } else{
+            // votas por Carolina
+            talento6.votos += 1;
+} 
+
+    }
+
+  
+}
