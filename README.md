@@ -1,4 +1,4 @@
-# blokdemy
+# blockdemy
 curso beca de blockdemy para conocer solidity ethereum y crear smarts contracts
 
 ### Manual de Usuario: Solidity_Bootcamp_G22
